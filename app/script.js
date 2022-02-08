@@ -14,9 +14,11 @@ qrText.addEventListener(
 qrBtn.addEventListener('click', generateQRCode);
 
 function generateQRCode() {
-    const size = '1000x1000';
-    const data = qrText.value;
-    const url = `${baseURL}?data=${data}&size=${size}`;
-    qrCode.src = url;
-    qrText.value = '';
+    if (qrText.value) {
+        const size = '1000x1000';
+        const data = qrText.value;
+        const url = `${baseURL}?data=${data}&size=${size}`;
+        qrCode.src = url;
+        qrText.value = '';
+    }
 }
