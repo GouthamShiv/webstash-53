@@ -12,5 +12,50 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background: rgb(10, 50, 100);
     font-family: 'Roboto', sans-serif;
+}
+
+.qr-container {
+    display: grid;
+    place-items: center;
+}
+
+.qr-container img {
+    width: 475px;
+    height: 275px;
+    border-radius: 5px;
+}
+
+.qr-container input {
+    padding: 5px;
+    margin: 10px;
+    resize: none;
+    font-size: 18px;
+    max-width: 400px;
+    border-radius: 5px;
+    color: rgb(255, 100, 100);
+    background: rgba(10, 50, 100);
+    border: 2px solid rgb(255, 100, 100);
+}
+
+.qr-container button {
+    width: 275px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 0.2px;
+    background: rgb(255, 100, 100);
+}
+
+.qr-container button:hover {
+    opacity: 0.9;
+}
+
+.qr-container button:active {
+    transform: scale(0.9);
 }
